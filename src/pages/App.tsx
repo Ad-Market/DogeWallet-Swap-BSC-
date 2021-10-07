@@ -25,7 +25,7 @@ import Menu from '../components/Menu'
 const AppWrapper = styled.div`
   display: flex;
   flex-flow: column;
-  align-items: flex-start;
+  align-items: center;
   overflow-x: hidden;
 `
 
@@ -125,7 +125,7 @@ export default function App() {
             }}
           >
             <TranslationsContext.Provider value={{ translations, setTranslations }}>
-              <Menu>
+              {/* <Menu> */}
                 <BodyWrapper>
                   <Popups />
                   <Web3ReactManager>
@@ -149,7 +149,7 @@ export default function App() {
                     </Switch>
                   </Web3ReactManager>
                 </BodyWrapper>
-              </Menu>
+              {/* </Menu> */}
             </TranslationsContext.Provider>
           </LanguageContext.Provider>
         </AppWrapper>
